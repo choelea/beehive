@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var log = require('../log');
+var log = require('./beelogger');
 /* GET collect listing. */
 router.get('/collect.gif', function (req, res) {
     collectData(req);
@@ -13,6 +13,12 @@ router.get('/collect.gif', function (req, res) {
 });
 
 function collectData(req){
-    log.info(req.query);
+    let data = req.query;
+    data.cid=req.cookies.cid;
+    data.una=req.cookies.una;
+    data.uid=req.cookies.uid;
+    data.cip=req.headers["X-FORWARDED-FOR"];
+    data['@timestamp']=new Date().toISOString();
+    log.info(data);
 }
 module.exports = router;

@@ -1,18 +1,18 @@
 {
-    "name": "beehive",
-    "version": "1.0.0",
-    "author": "Evgeny Aleksandrov",
-    "description": "Simple example of RESTful API with Node.js and passport",
-    "private": true,
-    "scripts": {
-        "start": "node ./bin/www"
-    },
-    "dependencies": {
-        "express": "^4.10.x",
-        "nconf": "^0.8.x",
-        "winston": "^2.x",
-        "winston-daily-rotate-file":"1.4.6"
-    },
-    
-    "license": "MIT"
+  "name": "beehive",
+  "version": "1.0.0",
+  "author": "Evgeny Aleksandrov",
+  "description": "Simple example of RESTful API with Node.js and passport",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "express": "^4.10.x",
+    "nconf": "^0.8.x",
+    "winston": "^2.x",
+    "winston-daily-rotate-file": "1.4.6"
+  },
+  "license": "MIT"
 }

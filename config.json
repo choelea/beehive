@@ -1,6 +1,6 @@
 {
     "port": 1337,
-    
+    "rootLogPath":"/data/bee",
     "default": {
         "api": {
             "version" : "v1"
