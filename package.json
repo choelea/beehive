@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "cookie-parser": "^1.4.3",
-    "cors": "^2.8.3",
     "express": "^4.10.x",
     "nconf": "^0.8.x",
     "winston": "^2.x",

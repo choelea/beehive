@@ -1,11 +1,11 @@
 var express = require('express');
-var path = require('path');
 var cookieParser = require('cookie-parser')
 var bee = require('./routes/collect');
-
 var app = express();
+
+
 app.use(cookieParser());
-app.use('/bee', bee);
+app.use('/beehive', bee);
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
     res.status(404);
